@@ -1,0 +1,17 @@
+task: topology_validation
+n_per_class: 200
+seed: 20262
+classes:
+  - GAIN
+  - LOSS
+  - EXPANSION
+  - CONTRACTION
+  - LEFT_SHIFT
+  - RIGHT_SHIFT
+  - SPLIT
+  - MERGE
+  - INTERNAL_GAIN
+  - INTERNAL_LOSS
+  - COMPLEX
+bidirectional_shift_primary: false
+output: benchmark/simulation/topology_validation.tsv

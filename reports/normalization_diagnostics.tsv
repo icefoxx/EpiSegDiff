@@ -1,0 +1,7 @@
+sample	raw_library_size	effective_library_size	normalization_factor	method
+ctrl_r1	2047	2047	0.995789353172892	library_size
+ctrl_r2	2171	2171	1.05611074046817	library_size
+ctrl_r3	2050	2050	0.997248741575197	library_size
+trt_r1	1973	1973	0.959791105916031	library_size
+trt_r2	1983	1983	0.964655733923715	library_size
+trt_r3	2117	2117	1.02984174922668	library_size

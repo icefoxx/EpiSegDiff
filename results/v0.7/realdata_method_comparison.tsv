@@ -1,0 +1,14 @@
+dataset	engine	score	GAIN	LOSS	n	median_width	bp	chroms	status
+A_GSE280947	pelt_min3	z_sefloor	2	688	13027	800	13622400	genome	PASS
+A_GSE280947	pelt	z_sefloor	0	13	489	1000	545000	19	PASS
+A_GSE280947	fused_lasso	raw_effect	0	18	18	200	4000	19	PASS
+A_GSE280947	wbs	raw_effect	0	38	38	1800	79600	19	PASS
+A_GSE280947	fixed_peak_limma	log2_limma	2	1688	1690	620	1199120	genome	REUSED_v0.6
+B_GSE110378	pelt_quantile75	z_sefloor	4411	2165	6576	1400	19097600	genome	REUSED_v0.5
+B_GSE110378	quantile_islands_POSTHOC	log2_limma	886	360	1246	8400	21841400	genome	REUSED_v0.5
+B_GSE110378	pelt	z_sefloor	340	121	8587	800	11698600	chr19	PASS
+B_GSE110378	fused_lasso	raw_effect	4	12	16	200	16400	chr19	PASS
+C_ATAC	pelt_min3	z_sefloor	48	1	11845	2000	26629000	chr1,chr19	PASS
+C_ATAC	fused_lasso	raw_effect	59	2	61	500	33500	chr1,chr19	PASS
+csaw	NA	NA	NA	NA	NA	NA	NA	NA	NOT_AVAILABLE_no_BAM
+THOR	NA	NA	NA	NA	NA	NA	NA	NA	NOT_AVAILABLE

@@ -1,0 +1,4 @@
+config_id	bin_size	pseudocount	summary_fun	filter_method	filter_parameter	tested_segments	GAIN	LOSS	total_DER	median_width	p90_width	median_abs_effect	n_valid_bins	n_input_bins	runtime_sec	status	failure_reason
+b100_p0.01_absolute_pen24	100	0.01	mean	absolute	0.6	22865	1	139	140	300	800	1.29109159673645	194118	27255223	115.093	PASS	
+b200_p0.01_absolute_pen24	200	0.01	mean	absolute	0.6	13027	2	688	690	800	1400	1.01804178205211	91390	13627618	56.163	PASS	
+b500_p0.01_absolute_pen24	500	0.01	mean	absolute	0.6	3663	2	581	583	1500	2500	0.810989739163642	32037	5451055	22.5029999999999	PASS	

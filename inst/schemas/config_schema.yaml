@@ -1,0 +1,26 @@
+# Informal schema for EpiSegDiff v0.2 configuration.
+# Required top-level keys and allowed values. Validated by validate_config().
+
+required_top_level:
+  - assay
+  - samples
+  - preprocessing
+  - normalization
+  - differential
+  - segmentation
+  - testing
+  - boundary
+  - topology
+  - output
+  - reproducibility
+
+assay.type: [cutnrun, chipseq, atac, methylation]
+preprocessing.counting_mode: [fragment_midpoint, fragment_overlap, insertion]
+preprocessing.coordinate_system: [bed_0based]
+normalization.method: [library_size, TMM, deseq2, spikein, background]
+differential.score: [logFC, standardized_effect, shrunken_effect]
+segmentation.loss: [gaussian, huber, winsorized_gaussian]
+segmentation.engine: [pelt, fpop, op]
+segmentation.candidate_strategy: [single_selected_penalty, multi-scale_consensus]
+testing.method: [edgeR_ql, dss_style, beta_binomial]
+boundary.refinement_method: [local_gradient, local_likelihood, cross_scale]

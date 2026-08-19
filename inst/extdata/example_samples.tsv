@@ -1,0 +1,5 @@
+sample_id	condition	replicate	assay	target	bam_or_methylation_path	control_path	spikein_status	library_metadata
+ctrl_r1	control	1	cutnrun	H3K27ac	data/ctrl_r1.bam		none	
+ctrl_r2	control	2	cutnrun	H3K27ac	data/ctrl_r2.bam		none	
+trt_r1	treatment	1	cutnrun	H3K27ac	data/trt_r1.bam		none	
+trt_r2	treatment	2	cutnrun	H3K27ac	data/trt_r2.bam		none	

@@ -1,0 +1,6 @@
+check	status
+v06_direction_JUN_LOSS	PASS
+v05_direction_H3K27me3_GAIN	PASS
+v042_width_contract	PASS
+assay_sep_count_vs_continuous	PASS
+refine_boundaries_not_overwritten	PASS

@@ -1,0 +1,40 @@
+version: "0.4"
+
+assay:
+  assay_family: continuous
+  input_type: bigwig
+  genome: mm10
+  signal_type: CPM
+  normalization: spike_in_plus_CPM
+
+samples: configs/gse280947_samples.tsv
+
+contrast:
+  numerator: JNKi
+  denominator: DMSO
+
+binning:
+  bin_size: 200
+  summary: mean
+
+signal_filter:
+  method: absolute
+  threshold: 0.6
+
+transform:
+  method: log2_pseudocount
+  pseudocount: 0.01
+
+model:
+  method: limma
+
+segmentation:
+  method: gaussian_pelt
+  penalty: 24
+  min_bins: 3
+
+calling:
+  fdr: 0.05
+
+output:
+  directory: results/gse280947_v04

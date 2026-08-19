@@ -1,0 +1,6 @@
+step	wall_sec	status	failure_reason
+synthetic_calibration	838	PASS	nrep_10_POST_HOC
+classC_promoter	NA	PASS	
+csaw_real	NA	NOT_AVAILABLE	no BAM for A/B
+csaw_toy_windowCounts	NA	PASS	0 windows on tiny BAM
+THOR_real	NA	NOT_AVAILABLE	rgt-THOR not installed; no BAM

@@ -1,0 +1,4 @@
+partition	GAIN	LOSS	status	note
+0	2	688	TRUE	only 2 balanced 2+2 nulls exist with n=4
+1	0	0	PASS	only 2 balanced 2+2 nulls exist with n=4
+2	0	0	PASS	only 2 balanced 2+2 nulls exist with n=4

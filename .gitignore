@@ -1,0 +1,42 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.o
+*.so
+*.dll
+src/*.o
+src/*.so
+src/RcppExports.cpp.bak
+.DS_Store
+*.Rcheck
+EpiSegDiff_*.tar.gz
+inst/doc
+vignettes/*.html
+vignettes/*.R
+benchmark/simulation/*.tmp
+reports/*.png
+.Rbuildignore.bak
+
+# Large assay inputs / derived matrices (do not publish)
+data/
+cache/
+*.bw
+*.bigWig
+*.bigwig
+*.bam
+*.bai
+*.rds
+
+# Bulky call tables / tracks (summaries and reports remain)
+results/**/primary*.tsv
+results/**/primary*.bed
+results/**/ztrack*
+results/episegdiff_primary.tsv
+results/episegdiff_primary.bed
+**/episegdiff_primary.*
+results/v0.4.2/filter_none/
+
+# Local session / tool noise
+.grok/
+*.log

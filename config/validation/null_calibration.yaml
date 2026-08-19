@@ -1,0 +1,24 @@
+task: null_calibration
+# Task D: ≥200 independent sims per primary strict-null regime (500 if cheap).
+n_bins: 250
+n_per_regime: 200
+seed: 20263
+strict_null_regimes:
+  - { name: mid_3rep, n_rep: 3, depth: 20, dispersion: 0.10, background_sd: 0.10 }
+  - { name: lowdepth_2rep, n_rep: 2, depth: 8, dispersion: 0.15, background_sd: 0.10 }
+  - { name: highdisp_5rep, n_rep: 5, depth: 20, dispersion: 0.40, background_sd: 0.15 }
+near_null:
+  n_sim: 80
+  effects: [0.1, 0.2, 0.3]
+  n_rep: 3
+  depth: 20
+  dispersion: 0.10
+  region_width: 25
+heterogeneous:
+  n_sim: 60
+  n_rep: 3
+  depth: 20
+  dispersion: 0.10
+q: [0.01, 0.05, 0.10]
+split_n_sim: 40
+output: benchmark/simulation/null_calibration.tsv

@@ -1,0 +1,4 @@
+class	n	note
+A_shared	257	IDR is presence reference; EpiSegDiff is bigwig-proxy Level I
+B_IDR_only	5144	IDR is presence reference; EpiSegDiff is bigwig-proxy Level I
+C_EpiSegDiff_only	374	IDR is presence reference; EpiSegDiff is bigwig-proxy Level I

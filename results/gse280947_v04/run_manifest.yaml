@@ -1,0 +1,26 @@
+software: EpiSegDiff 0.4.0
+date: 2026-08-17 11:56:29.25602
+assay_family: continuous
+input_type: bigwig
+genome: mm10
+signal_type: CPM
+normalization: spike_in_plus_CPM
+bin_size: 200
+transform: log2_pseudocount
+pseudocount: 0.01
+filter_method: absolute
+filter_threshold: 0.6
+model: limma
+contrast: JNKi - DMSO
+segmentation_method: gaussian_pelt
+penalty: 24.0
+min_bins: 3
+fdr_threshold: 0.05
+inference_mode: replicated
+n_bins: 13627618
+n_valid: 91390
+n_segments: 13027
+n_GAIN: 2
+n_LOSS: 688
+runtime_sec: 236.02
+inputs: data/GSE280947/conventional/GSM8607876_DMSO1_cJun.bigWig;data/GSE280947/conventional/GSM8607877_DMSO2_cJun.bigWig;data/GSE280947/conventional/GSM8607882_JNKI1_cJun.bigWig;data/GSE280947/conventional/GSM8607883_JNKI2_cJun.bigWig

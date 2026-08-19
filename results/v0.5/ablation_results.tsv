@@ -1,0 +1,4 @@
+ablation	GAIN	LOSS	n_units	median_width
+adaptive_PELT	2	688	13027	800
+fixed_bins_unmerged	2	240	91390	200
+fixed_peaks	2	1688	5398	620

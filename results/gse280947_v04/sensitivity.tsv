@@ -1,0 +1,8 @@
+bin_size	pseudocount	filter	penalty	n_tested	n_GAIN	n_LOSS	median_width	p90_width	note
+200	0.01	absolute	24	13027	2	688	800	1400	reference_v0.4
+200	0.001	absolute	24	NA	NA	NA	NA	NA	not_run_import_cost
+200	0.05	absolute	24	NA	NA	NA	NA	NA	not_run_import_cost
+200	0.1	absolute	24	NA	NA	NA	NA	NA	not_run_import_cost
+100	0.01	absolute	24	NA	NA	NA	NA	NA	opt_in_not_run
+500	0.01	absolute	24	NA	NA	NA	NA	NA	not_run
+200	0.01	none	24	NA	NA	NA	NA	NA	blocked_13M_bins

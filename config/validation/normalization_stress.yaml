@@ -1,0 +1,29 @@
+# v0.2.1 Task A — reduced balanced design (full Cartesian is documented as too large).
+# Primary axis: differential-genome fraction × GAIN:LOSS × normalization.
+# Satellites: n_rep, depth, dispersion, effect, region width at one interior cell.
+
+task: normalization_stress
+n_bins: 600
+bin_size: 200
+n_sim_primary: 4
+n_sim_satellite: 3
+fractions: [0.0, 0.01, 0.05, 0.10, 0.25, 0.50]
+gain_props: [0.5, 0.7, 0.9, 1.0]
+methods: [library_size, TMM, deseq2, background]
+primary:
+  n_rep: 3
+  depth: 20
+  dispersion: 0.10
+  effect: 1.5
+  region_width: 20
+satellite_anchor:
+  fraction: 0.10
+  gain_prop: 0.5
+  n_rep: [2, 5]
+  depth: [8, 50]
+  dispersion: [0.40]
+  effect: [2.5]
+  region_width: [8, 40]
+run_discovery_fractions: [0.0, 0.05, 0.25, 0.50]
+seed: 20261
+output: benchmark/simulation/normalization_stress_results.tsv

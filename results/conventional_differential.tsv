@@ -1,0 +1,2 @@
+reference	n_dmso_idr	n_jnki_idr	n_dmso_with_jnki_overlap	n_jnki_with_dmso_overlap	n_dmso_only_approx	n_jnki_only_approx	median_width_dmso	median_width_jnki	note
+authors_MACS2_IDR_presence	4960	1632	1140	1144	3820	488	643	601	presence-absence of IDR peaks, not fragment DE; not EpiSegDiff

@@ -1,0 +1,6 @@
+width	family	config	f1	production_C_f1	oracle_gap
+200	raw+seg	raw_effect_fused_lasso	0.62	0.468678626991403	0.151321373008597
+500	score+pelt	standardized_pelt_min_3	0.652526151540985	0.635315670106355	0.0172104814346299
+2000	score+pelt	raw_effect_pelt_min_1	1	1	0
+10000	score+pelt	raw_effect_pelt_min_1	1	1	0
+50000	score+pelt	raw_effect_pelt_min_1	1	1	0

@@ -1,0 +1,4 @@
+method	region	model
+ESD_A	gaussian_PELT	limma_log2p0.01
+conventional_A	IDR_union	limma_log2p0.01
+fixed_bins_A	200bp_valid	limma_log2p0.01

@@ -1,0 +1,13 @@
+config	cell	p_candidate_exists	p_pass_threshold	p_retained	p_both	false_child	n
+child_pelt	primary_L1.5	0.98	0	NA	0	0	50
+child_thr025	primary_L1.5	1	0.2	1	0.2	0.12	50
+parent_median	primary_L1.5	1	0.08	1	0.08	0.01	50
+parent_trim10	primary_L1.5	1	0.18	1	0.18	0.02	50
+reconcile	primary_L1.5	1	0.08	0.75	0.06	0	50
+ref	primary_L1.5	1	0.2	1	0.2	0.0233333333333333	50
+child_pelt	weak_L	0.98	0	NA	0	0	50
+child_thr025	weak_L	1	0	NA	0	0.04	50
+parent_median	weak_L	1	0.02	1	0.02	0.01	50
+parent_trim10	weak_L	1	0	NA	0	0.08	50
+reconcile	weak_L	0.98	0.0204081632653061	0	0	0	50
+ref	weak_L	1	0	NA	0	0.02	50

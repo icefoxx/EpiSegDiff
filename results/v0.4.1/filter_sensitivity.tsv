@@ -1,0 +1,3 @@
+config_id	bin_size	pseudocount	summary_fun	filter_method	filter_parameter	tested_segments	GAIN	LOSS	total_DER	median_width	p90_width	median_abs_effect	n_valid_bins	n_input_bins	runtime_sec	status	failure_reason
+b200_p0.01_none_pen24	200	0.01	mean	none	NA	NA	NA	NA	NA	NA	NA	NA	13627618	13627618	NA	NOT_RUN	Killed after >30 min at ~100% CPU in Gaussian PELT on unfiltered genome-wide z-scores (13.6M bins; one CVR per chromosome). setTimeLimit cannot interrupt pelt_gaussian_cpp. Absolute 0.6 retains 91390 / 13627618 bins (0.67%).
+b200_p0.01_absolute_pen24	200	0.01	mean	absolute	0.6	13027	2	688	690	800	1400	1.01804178205211	91390	13627618	56.163	PASS	NA

@@ -1,0 +1,13 @@
+config	GAIN	LOSS	loss_dominates	status
+b100_p0.001_absolute_pen24	1	143	TRUE	PASS
+b100_p0.01_absolute_pen24	1	139	TRUE	PASS
+b100_p0.05_absolute_pen24	1	153	TRUE	PASS
+b100_p0.1_absolute_pen24	1	163	TRUE	PASS
+b200_p0.001_absolute_pen24	2	668	TRUE	PASS
+b200_p0.01_absolute_pen24	2	688	TRUE	PASS
+b200_p0.05_absolute_pen24	2	787	TRUE	PASS
+b200_p0.1_absolute_pen24	2	854	TRUE	PASS
+b500_p0.001_absolute_pen24	2	585	TRUE	PASS
+b500_p0.01_absolute_pen24	2	581	TRUE	PASS
+b500_p0.05_absolute_pen24	2	609	TRUE	PASS
+b500_p0.1_absolute_pen24	2	636	TRUE	PASS

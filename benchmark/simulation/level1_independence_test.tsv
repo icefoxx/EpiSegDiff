@@ -1,0 +1,9 @@
+sim_id	event	n_tested_on	n_tested_off	n_events_on	n_events_off	stats_identical	intervals_identical
+1	GAIN	3	3	1	0	TRUE	TRUE
+2	LOSS	3	3	1	0	TRUE	TRUE
+3	GAIN	3	3	2	0	TRUE	TRUE
+4	LOSS	4	4	3	0	TRUE	TRUE
+5	GAIN	3	3	1	0	TRUE	TRUE
+6	LOSS	5	5	0	0	TRUE	TRUE
+7	GAIN	3	3	1	0	TRUE	TRUE
+8	LOSS	4	4	1	0	TRUE	TRUE

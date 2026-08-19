@@ -1,0 +1,9 @@
+architecture	family	status	identifiability
+A_additive	additive	PROTOTYPE	TV gap λB>>λL residual
+B_hierarchy	hierarchy	PROTOTYPE	parent duration + residual children
+C_multires	multires	PROTOTYPE	pool factors kc/km
+D_joint	joint	PROTOTYPE	alternating dual-TV λB/λL
+CTL_pelt	control	PROTOTYPE	flat PELT
+CTL_fused	control	PROTOTYPE	flat fused
+CTL_std	control	PROTOTYPE	std+PELT
+CTL_union	control	PROTOTYPE	union

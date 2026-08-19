@@ -1,0 +1,16 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git$
+^\.github$
+^README\.md$
+^LICENSE\.md$
+^docs$
+^reports$
+^benchmark$
+^config$
+^scripts$
+^\.gitignore$
+^man-roxygen$
+^EpiSegDiff\.Rcheck$
+^EpiSegDiff_.*\.tar\.gz$
+^\.DS_Store$

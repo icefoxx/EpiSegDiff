@@ -1,0 +1,6 @@
+method	observation	status
+ESD	BigWig_limma	USED
+fixed_peak	BigWig_limma	USED
+window_aggregate	BigWig_limma	USED_synthetic
+csaw_BAM	BAM_NB	NOT_AVAILABLE
+THOR	HMM	NOT_AVAILABLE

@@ -1,0 +1,92 @@
+# GSE280947 JUN CUT&RUN v0.3 pilot — Level I primary
+# Contrast: JNKi (SP600125) vs DMSO. GAIN = higher JUN after inhibitor.
+
+assay:
+  type: cutnrun
+  target: JUN
+  genome: mm10
+
+samples:
+  - sample_id: dmso_jun_r1
+    condition: DMSO
+    replicate: 1
+    assay: cutnrun
+    target: JUN
+    bam_or_methylation_path: data/GSE280947/bam/dmso_jun_r1.bam
+    spikein_status: ecoli_k12
+    library_metadata: GSM8607876
+  - sample_id: dmso_jun_r2
+    condition: DMSO
+    replicate: 2
+    assay: cutnrun
+    target: JUN
+    bam_or_methylation_path: data/GSE280947/bam/dmso_jun_r2.bam
+    spikein_status: ecoli_k12
+    library_metadata: GSM8607877
+  - sample_id: jnki_jun_r1
+    condition: JNKi
+    replicate: 1
+    assay: cutnrun
+    target: JUN
+    bam_or_methylation_path: data/GSE280947/bam/jnki_jun_r1.bam
+    spikein_status: ecoli_k12
+    library_metadata: GSM8607882
+  - sample_id: jnki_jun_r2
+    condition: JNKi
+    replicate: 2
+    assay: cutnrun
+    target: JUN
+    bam_or_methylation_path: data/GSE280947/bam/jnki_jun_r2.bam
+    spikein_status: ecoli_k12
+    library_metadata: GSM8607883
+
+preprocessing:
+  bin_size: 50
+  chrom_sizes: data/GSE280947/metadata/mm10.chrom.sizes
+  blacklist: null
+  counting_mode: fragment_midpoint
+  paired: true
+  mapq_min: 30
+  coordinate_system: bed_0based
+
+normalization:
+  method: TMM
+  spikein_usage: false
+  extreme_factor_ratio: 5
+
+differential:
+  model: edgeR_ql
+  control_level: DMSO
+  treatment_level: JNKi
+  score: standardized_effect
+  dispersion: edgeR_estimateDisp
+
+segmentation:
+  loss: gaussian
+  engine: pelt
+  penalties: [10, 20, 40]
+  min_width: 3
+  candidate_strategy: single_selected_penalty
+  selected_penalty: 20
+
+testing:
+  method: edgeR_ql
+  fdr_method: BH
+  fdr_threshold: 0.05
+  effect_threshold: 0
+
+boundary:
+  refinement_method: local_gradient
+  search_window_bins: 8
+
+topology:
+  enabled: false
+
+output:
+  directory: data/GSE280947/episegdiff/primary_tmm_50bp
+  write_bigwig: true
+  write_bed: true
+  write_tsv: true
+
+reproducibility:
+  seed: 20271

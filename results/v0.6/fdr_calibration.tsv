@@ -1,0 +1,7 @@
+alpha	method	n_der	any_der
+0.01	esd	0.6	0.3
+0.05	esd	0.82	0.36
+0.1	esd	1	0.48
+0.01	window	0	0
+0.05	window	0	0
+0.1	window	0.02	0.02

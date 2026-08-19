@@ -1,0 +1,14 @@
+key	value
+observation	deposited_bigwig_spikein_CPM_NOT_fragment_counts
+bin_size	200
+n_bins	13627618
+n_candidates	33319
+n_sig	631
+n_GAIN	1
+n_LOSS	630
+median_sig_width	400
+n_classA	257
+n_classB	5144
+n_classC	374
+runtime_sec	75.199
+contrast	JNKi_minus_DMSO

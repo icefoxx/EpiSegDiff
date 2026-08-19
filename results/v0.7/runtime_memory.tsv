@@ -1,0 +1,4 @@
+step	nrep	status	seconds
+synthetic_v07_primary	50	PASS	NA
+synthetic_v07_finish	50	PASS	139.725
+realdata_A_B_C	NA	PASS	177

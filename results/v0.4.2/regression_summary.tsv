@@ -1,0 +1,8 @@
+check	status
+assay_separation	PASS
+reference_counts	PASS
+direction	PASS
+synthetic	PASS
+unreplicated_fdr	PASS
+worker_determinism	PASS
+min_width	PASS

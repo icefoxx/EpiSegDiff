@@ -1,0 +1,9 @@
+falsifier	architecture	mean_f1	mean_p_detect	mean_n_regions	mean_p_both	mean_p_merged	mean_p_parent	mean_p_child	mean_false_local	mean_any_der	mean_core_recall	mean_over_extension	n
+F2_broad	A_additive	1	1	1	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	B_hierarchy	0.99772225567051	1	1.08	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	C_multires	0.835305466979043	1	1.14	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	CTL_fused	0.694409407549608	1	1	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	CTL_pelt	1	1	1	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	CTL_std	0.992050600361945	1	21.98	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	CTL_union	1	1	1	NA	NA	NA	NA	NA	1	NA	NA	100
+F2_broad	D_joint	0.000944901534365176	0.04	0.09	NA	NA	NA	NA	NA	0.06	NA	NA	100

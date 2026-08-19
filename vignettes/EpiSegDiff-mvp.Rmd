@@ -1,0 +1,28 @@
+---
+title: "EpiSegDiff v0.2 MVP"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EpiSegDiff v0.2 MVP}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+# Overview
+
+EpiSegDiff estimates a replicate-aware differential-effect track
+(\(\hat\beta_i\) or \(Z_i\)) and segments that track. It does not
+segment raw coverage. BH q-values after adaptive discovery are not
+claimed to be guaranteed region-level FDR.
+
+```{r setup}
+library(EpiSegDiff)
+cfg <- default_config()
+cfg$differential$score
+cfg$segmentation$loss
+```
+
+See `docs/statistical_model.md` and `config/example.yaml`.

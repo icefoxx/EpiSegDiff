@@ -1,0 +1,131 @@
+# EpiSegDiff v0.2 example configuration
+# Every scientific choice listed here is explicit. Do not hide alternatives
+# as undocumented defaults. See docs/statistical_model.md.
+
+assay:
+  type: cutnrun          # cutnrun | chipseq | atac | methylation
+  target: H3K27ac        # biological target / mark
+  genome: GRCh38         # assembly label only; lengths come from chrom_sizes
+
+samples:
+  - sample_id: ctrl_r1
+    condition: control
+    replicate: 1
+    assay: cutnrun
+    target: H3K27ac
+    bam_or_methylation_path: data/ctrl_r1.bam
+    control_path: null
+    spikein_status: none
+    library_metadata: ""
+  - sample_id: ctrl_r2
+    condition: control
+    replicate: 2
+    assay: cutnrun
+    target: H3K27ac
+    bam_or_methylation_path: data/ctrl_r2.bam
+    control_path: null
+    spikein_status: none
+    library_metadata: ""
+  - sample_id: trt_r1
+    condition: treatment
+    replicate: 1
+    assay: cutnrun
+    target: H3K27ac
+    bam_or_methylation_path: data/trt_r1.bam
+    control_path: null
+    spikein_status: none
+    library_metadata: ""
+  - sample_id: trt_r2
+    condition: treatment
+    replicate: 2
+    assay: cutnrun
+    target: H3K27ac
+    bam_or_methylation_path: data/trt_r2.bam
+    control_path: null
+    spikein_status: none
+    library_metadata: ""
+
+preprocessing:
+  bin_size: 200                    # bp; not biologically universal
+  chrom_sizes: null                # named integer vector path (chrom\tlength) or null
+  blacklist: null                  # BED path or null
+  extra_exclude: null              # additional BED
+  counting_mode: fragment_midpoint # fragment_midpoint | fragment_overlap
+  fragment_channels: []            # empty = total fragments only
+  paired: true
+  mapq_min: 0
+  chromosomes: null                # null = all chromosomes in chrom_sizes / BAM
+  mask_low_coverage: false         # if true, low-coverage bins split CVRs
+  min_count_sum: 0                 # used only when mask_low_coverage is true
+  coordinate_system: bed_0based    # [start, end) 0-based; required convention
+
+normalization:
+  method: TMM                      # library_size | TMM | deseq2 | spikein | background
+  spikein_usage: false
+  background_definition: null
+  extreme_factor_ratio: 5          # warn if max/min factor exceeds this
+
+differential:
+  model: edgeR_ql                  # edgeR_ql (count assays)
+  design: ~ condition              # control is the reference level
+  control_level: control
+  treatment_level: treatment
+  score: standardized_effect       # logFC | standardized_effect | shrunken_effect
+  dispersion: edgeR_estimateDisp   # estimated before segmentation; not segment-specific
+  prior_count: 0.125
+
+segmentation:
+  loss: gaussian                   # gaussian | huber | winsorized_gaussian
+  engine: pelt                     # pelt | fpop | op
+  penalties: [5, 10, 20, 40, 80]   # penalty path; not automatically a tree
+  min_width: 3                     # bins
+  huber_k: 1.345
+  winsor_k: 3.0                    # MAD multiples for winsorized_gaussian
+  candidate_strategy: single_selected_penalty
+  selected_penalty: 20
+
+testing:
+  method: edgeR_ql
+  fdr_method: BH                   # nominal adjustment only; not selective FDR
+  fdr_threshold: 0.05
+  effect_threshold: 0
+  report_empirical_fdr: true
+
+boundary:
+  refinement_method: local_gradient  # local_gradient | local_likelihood | cross_scale
+  search_window_bins: 5
+
+topology:
+  enabled: true                    # false: Level I only; no domain/event labels
+  domain_method: condition_mean_threshold
+  domain_mean_quantile: 0.8
+  min_reciprocal_overlap: 0.2
+  high_reciprocal_overlap: 0.5
+  max_match_distance: 5000
+  min_width_ratio_change: 1.25
+  min_boundary_shift: 100
+  min_internal_gap_width: 200
+  similar_width_ratio: 1.25
+  max_overlap_for_shift: 0.85
+
+output:
+  directory: results/example
+  write_bigwig: false
+  write_bed: true
+  write_tsv: true
+
+reproducibility:
+  seed: 1
+
+atac:
+  tn5_plus_offset: 4
+  tn5_minus_offset: -5
+  fragment_channel_breaks:
+    short: [0, 100]
+    mono: [180, 247]
+    di: [315, 473]
+
+methylation:
+  min_coverage: 5
+  model: beta_binomial_approx
+  score: standardized_effect

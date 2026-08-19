@@ -1,0 +1,23 @@
+task: integrated_benchmark
+n_bins: 400
+n_sim: 5
+n_rep: [3]
+depths: [20]
+dispersions: [0.10]
+effects: [1.5]
+scales: [narrow, broad]
+methods: [TMM, background, library_size]
+seed: 20264
+classes:
+  - GAIN
+  - LOSS
+  - EXPANSION
+  - CONTRACTION
+  - LEFT_SHIFT
+  - RIGHT_SHIFT
+  - SPLIT
+  - MERGE
+  - INTERNAL_GAIN
+  - INTERNAL_LOSS
+  - NO_CHANGE
+output: benchmark/simulation/integrated_v021_results.tsv

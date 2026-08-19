@@ -1,0 +1,6 @@
+dataset	architecture	status	n	n_broad	n_local	GAIN	LOSS	sec
+A_chr19	A_additive	PASS	0	0	0	0	0	0.133000000000038
+A_chr19	B_hierarchy	PASS	1	1	0	0	1	0.163000000000011
+A_chr19	D_joint	PASS	0	0	0	0	0	0.252999999999929
+A_chr19	CTL_pelt	PASS	1	0	0	0	1	0.123000000000047
+A_chr19	CTL_fused	PASS	10	0	0	0	10	0.00600000000008549

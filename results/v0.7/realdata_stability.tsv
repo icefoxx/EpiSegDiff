@@ -1,0 +1,3 @@
+dataset	comparison	chrom	jaccard	n_a	n_b	status
+A	pelt_penalty_24_vs_16	19	1	489	490	PASS
+A	leave_out_JNKi_R2	19	0	489	483	PASS

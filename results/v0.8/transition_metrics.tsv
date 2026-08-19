@@ -1,0 +1,9 @@
+falsifier	architecture	mean_f1	mean_p_detect	mean_n_regions	mean_p_both	mean_p_merged	mean_p_parent	mean_p_child	mean_false_local	mean_any_der	mean_core_recall	mean_over_extension	n
+F6_gradual	A_additive	0.884645636603574	1	1	NA	NA	NA	NA	NA	1	1	0	50
+F6_gradual	B_hierarchy	0.87680506122322	1	1.36	NA	NA	NA	NA	NA	1	1	0	50
+F6_gradual	C_multires	0.344827586206897	1	1	NA	NA	NA	NA	NA	1	1	0.791666666666667	50
+F6_gradual	CTL_fused	0.349650074156471	1	1	NA	NA	NA	NA	NA	1	1	0.787344656172328	50
+F6_gradual	CTL_pelt	0.890837197417027	1	1	NA	NA	NA	NA	NA	1	1	0	50
+F6_gradual	CTL_std	0.940738111569334	1	10.72	NA	NA	NA	NA	NA	1	1	0.0177022435916215	50
+F6_gradual	CTL_union	0.890837197417027	1	1	NA	NA	NA	NA	NA	1	1	0	50
+F6_gradual	D_joint	0	0	0	NA	NA	NA	NA	NA	0	0	0	50

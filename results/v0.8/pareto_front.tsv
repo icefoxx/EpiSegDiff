@@ -1,0 +1,9 @@
+architecture	mean_f1_narrow	mean_f1_broad	mean_p_both	mean_p_merged	leak_false_local	null_p_any	pareto_note
+A_additive	0	1	0	1	0	0	NA
+B_hierarchy	0.436666666666666	0.99772225567051	0.16	0.84	0.02	0	NA
+C_multires	0.14	0.835305466979043	0.26	0.74	0.34	0	NA
+CTL_fused	0.436666666666666	0.694409407549608	0	1	0	0	NA
+CTL_pelt	0	1	0	1	0	0	NA
+CTL_std	0.656631286594054	0.992050600361945	0	1	0	0.74	NA
+CTL_union	0.436666666666666	1	0	1	0	0	NA
+D_joint	0	0.000944901534365176	0	0.06	0.04	0.06	NA

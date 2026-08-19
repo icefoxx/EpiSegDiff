@@ -1,0 +1,8 @@
+case	n_der	precision	recall	detected	direction_ok	boundary_l1
+narrow_GAIN	1	1	1	TRUE	TRUE	0
+narrow_LOSS	1	1	1	TRUE	TRUE	0
+broad_GAIN	1	1	1	TRUE	TRUE	0
+broad_LOSS	1	1	1	TRUE	TRUE	0
+nearby_same	2	1	1	TRUE	TRUE	0
+nearby_opposite	2	1	1	TRUE	TRUE	0
+cross_peak_boundary	1	1	1	TRUE	TRUE	0

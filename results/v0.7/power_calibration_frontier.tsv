@@ -1,0 +1,7 @@
+inference	engine	mean_recall	p_any_false
+same_data	wbs	0.12	0.06
+pooled	wbs	0.12	0.08
+split	wbs	0.02	0
+mad_threshold	pelt	1	0
+mad_threshold	fused_lasso	0.22	0
+mad_threshold	wbs	0	0

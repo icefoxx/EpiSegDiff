@@ -1,0 +1,42 @@
+Package: EpiSegDiff
+Title: Replicate-Aware Multi-Scale Differential Epigenomic Segmentation
+Version: 0.8.1
+Authors@R: person("EpiSegDiff", "Authors", role = c("aut", "cre"),
+                  email = "episegdiff@example.org")
+Description: Detect differential epigenomic structure without requiring
+    predefined peaks, then characterize intensity changes and
+    boundary/topology dynamics. Assay-specific observation models are
+    preserved; segmentation targets the genomic condition effect.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports:
+    methods,
+    stats,
+    utils,
+    graphics,
+    grDevices,
+    yaml,
+    Rcpp
+LinkingTo: Rcpp
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    edgeR,
+    limma,
+    GenomicRanges,
+    GenomicAlignments,
+    Rsamtools,
+    IRanges,
+    S4Vectors,
+    GenomeInfoDb,
+    rtracklayer,
+    data.table
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/example/EpiSegDiff
+BugReports: https://github.com/example/EpiSegDiff/issues

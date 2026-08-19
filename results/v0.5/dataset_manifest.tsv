@@ -1,0 +1,3 @@
+dataset_id	accession	assay	target	contrast	bam	status
+A	GSE280947	CUT&RUN	JUN	JNKi - DMSO	FALSE	USED
+B	GSE110378	ChIPmentation	H3K27me3	KO - Control	FALSE	ESD_AND_ISLANDS_DONE

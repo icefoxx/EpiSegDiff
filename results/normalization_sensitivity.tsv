@@ -1,0 +1,4 @@
+status	method	note
+NOT_RUN	TMM	Requires EpiSegDiff count matrix from BAM
+NOT_RUN	spikein	Requires E. coli alignments of the same FASTQ
+NOT_RUN	igg_background	Optional; not default

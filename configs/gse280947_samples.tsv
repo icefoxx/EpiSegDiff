@@ -1,0 +1,5 @@
+sample	condition	replicate	file	GEO_accession	assay	signal_type	normalization	source
+DMSO_R1	DMSO	1	data/GSE280947/conventional/GSM8607876_DMSO1_cJun.bigWig	GSM8607876	JUN	CPM	spike_in_plus_CPM	GEO
+DMSO_R2	DMSO	2	data/GSE280947/conventional/GSM8607877_DMSO2_cJun.bigWig	GSM8607877	JUN	CPM	spike_in_plus_CPM	GEO
+JNKi_R1	JNKi	1	data/GSE280947/conventional/GSM8607882_JNKI1_cJun.bigWig	GSM8607882	JUN	CPM	spike_in_plus_CPM	GEO
+JNKi_R2	JNKi	2	data/GSE280947/conventional/GSM8607883_JNKI2_cJun.bigWig	GSM8607883	JUN	CPM	spike_in_plus_CPM	GEO

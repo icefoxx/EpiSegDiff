@@ -1,0 +1,30 @@
+task: boundary_audit
+seed: 20266
+coordinate_toy:
+  chrom_length: 1000
+  bin_size: 100
+  region: [300, 700]
+noiseless:
+  n: 21
+  bin_size: 100
+  blocks:
+    - {L_idx: 5, R_idx: 9, height: 2}
+    - {L_idx: 8, R_idx: 14, height: 2}
+    - {L_idx: 3, R_idx: 7, height: -2}
+    - {L_idx: 6, R_idx: 11, height: -2}
+reverse:
+  n_sim: 40
+  n: 30
+  bin_size: 50
+  search_radius: 6
+stress:
+  bin_sizes: [25, 50, 100]
+  paddings: [0, 1, 2]
+  radii: [3, 5, 10]
+  heights: [1.0, 2.0, 4.0]
+  n_rep: [2, 3, 5]
+  narrow_bp: [200, 500, 1000]
+  broad_bp: [10000, 20000]
+  n_sim: 4
+methods: [legacy, symmetric, likelihood]
+output_dir: benchmark/simulation

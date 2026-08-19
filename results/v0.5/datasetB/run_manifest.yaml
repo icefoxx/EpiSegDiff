@@ -1,0 +1,10 @@
+dataset: GSE110378
+GAIN: 4411
+LOSS: 2165
+n_tested: 337863
+conv_GAIN: 886
+conv_LOSS: 360
+n_islands: 27794
+conventional_note: POST HOC quantile islands; hiddenDomains not deposited
+contrast: KO - Control
+expected: GAIN of H3K27me3

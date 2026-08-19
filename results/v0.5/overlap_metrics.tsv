@@ -1,0 +1,2 @@
+n_esd	n_conv	GAIN_esd	LOSS_esd	GAIN_conv	LOSS_conv	bp_esd	bp_conv	bp_shared	DER_bp_jaccard	frac_esd_any_overlap	frac_conv_any_overlap	median_width_esd	median_width_conv	fragmentation_index	mean_peaks_per_esd	n_opposite_1bp
+690	1690	2	688	2	1688	656200	1199120	306874	0.198181919162825	0.543478260869565	0.22603550295858	800	620	0.57536231884058	0.57536231884058	0

@@ -1,0 +1,2 @@
+reference_id	alternative_id	effect_pearson	effect_spearman	sign_concordance	sign_concordance_strong	called_effect_pearson	called_sign_concordance	DER_bp_jaccard	reference_DER_recovery	strong_reference_DER_recovery	median_boundary_displacement	p90_boundary_displacement	GAIN_reference	GAIN_alternative	LOSS_reference	LOSS_alternative
+ESD	conventional	0.86384461427797	0.853452577444415	0.984404096834264	1	0.858675114030652	1	0.198181919162825	0.543478260869565	0.517333333333333	84	395.9	2	2	688	1688

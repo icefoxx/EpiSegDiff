@@ -1,0 +1,7 @@
+method	software_version	command	parameters	input_transformation	runtime_sec	exit_status	output_parsing_rule	notes
+csaw	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	Package may be missing; do not treat as a silent skip in a formal benchmark.
+MACS3+DiffBind	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	External binaries not bundled.
+THOR	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	External binary not bundled.
+DSS	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	Methylation comparator.
+dmrseq	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	Methylation comparator.
+metilene	not-run	NA	NA	NA	NA	not-attempted-in-this-checkout	shared compute_region_metrics()	Methylation comparator.

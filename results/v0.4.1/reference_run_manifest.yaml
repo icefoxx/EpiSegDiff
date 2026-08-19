@@ -1,0 +1,17 @@
+config: config/validation/v0.4.1_gse280947_reference.yaml
+GAIN: 2
+LOSS: 688
+min_width: 600
+n_tested: 13027
+runtime_sec: 56.163
+source: cached_100bp_coarsened_to_200
+n_input_bins: 13627618
+n_valid_bins: 91390
+strong_abs_effect: 1.0
+contrast: JNKi - DMSO
+summary_fun: mean
+filter: absolute 0.6
+v04_expected:
+  GAIN: 2.0
+  LOSS: 688.0
+  min_width: 600.0

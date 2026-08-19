@@ -1,0 +1,2 @@
+n_units	n_tiny_var	frac_tiny_var	median_var	q01_var	median_signal_tiny	median_signal_ok	frac_sig_among_tiny	frac_sig_among_ok	frac_tiny_among_der	frac_tiny_among_nonder	n_warnings_captured	warning_text	effect_cor_default_vs_robust	median_abs_effect_diff_robust	classification
+13627618	1328741	0.097503540237186	0.899060052562819	0	0	0.132702749222517	NA	NA	NA	NA	2	Zero sample variances detected, have been offset away from zero | 1328741 very small variances detected, have been offset away from zero	1	0	harmless / expected
